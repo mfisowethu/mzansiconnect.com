@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mzansi Connect | Marketplace</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .items-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 30px 0;
+        }
+        
+        .item-card {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+        
+        .item-img {
+            height: 200px;
+            width: 100%;
+            object-fit: cover;
+        }
+        
+        .item-info {
+            padding: 15px;
+        }
+        
+        .item-price {
+            font-weight: bold;
+            color: #FF7900;
+            font-size: 1.2rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Shared Header -->
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">Mzansi<span>Connect</span></div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="marketplace.html">Marketplace</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="safety.html">Safety</a></li>
+                    <li><a href="auth.html">Login</a></li>
+                </ul>
+                <div class="hamburger">☰</div>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- Marketplace Content -->
+    <div class="container">
+        <h1 style="padding: 20px 0;">Marketplace</h1>
+        <div class="items-grid">
+            <div class="item-card">
+                <img src="images/download (3).jpeg" alt="Sneakers" class="item-img">
+                <div class="item-info">
+                    <h3>Nike Air Max</h3>
+                    <p>Size 9, good condition</p>
+                    <div class="item-price">R850</div>
+                </div>
+            </div>
+            <!-- More items... -->
+        </div>
+    </div>
+    
+    <!-- Shared Footer -->
+    <footer>
+        <div class="container">
+            <div class="logo">Mzansi<span>Connect</span></div>
+            <ul class="footer-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="marketplace.html">Marketplace</a></li>
+                <li><a href="safety.html">Safety Tips</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

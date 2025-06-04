@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Site Settings | Mzansi Connect</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    .form-group { margin-bottom: 20px; }
+    label { display: block; margin-bottom: 5px; }
+    input, textarea { width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px; }
+    button { background: #FF7900; color: rgb(255, 255, 255); padding: 10px 20px; border: none; border-radius: 5px; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <div class="logo">Mzansi<span>Connect Admin</span></div>
+        <ul class="nav-links">
+          <li><a href="admin-dashboard.html">Dashboard</a></li>
+          <li><a href="admin-marketplace.html">Marketplace</a></li>
+          <li><a href="admin-users.html">Manage Users</a></li>
+          <li><a href="admin-settings.html">Site Settings</a></li>
+          <li><a href="auth.html">Logout</a></li>
+        </ul>
+        <div class="hamburger">☰</div>
+      </nav>
+    </div>
+  </header>
+
+  <section class="container">
+    <h1>Site Settings</h1>
+    <form>
+      <div class="form-group">
+        <label for="site-name">Site Name</label>
+        <input type="text" id="site-name" value="Mzansi Connect"/>
+      </div>
+      <div class="form-group">
+        <label for="contact-email">Contact Email</label>
+        <input type="email" id="contact-email" value="info@mzansiconnect.co.za"/>
+      </div>
+      <div class="form-group">
+        <label for="footer-text">Footer Text</label>
+        <textarea id="footer-text">&copy; 2023 Mzansi Connect</textarea>
+      </div>
+      <button type="submit">Save Settings</button>
+    </form>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2023 Mzansi Connect Admin</p>
+    </div>
+  </footer>
+
+  <script>
+    document.querySelector('.hamburger').addEventListener('click', function() {
+      document.querySelector('.nav-links').classList.toggle('active');
+    });
+  </script>
+</body>
+</html>
